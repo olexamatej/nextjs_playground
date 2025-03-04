@@ -1,5 +1,7 @@
-## Next.js App Router Course - Starter
+## Next.js Playground  
 
-This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
+Just a playground for Next.js that I used before the **BSEC2025 Hackathon**, where we built with this stack.  
 
-For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+It's mostly me following the official Next.js tutorial, but I’ve spiced things up here and there for learning purposes. 🚀  
+
+[Link to our BSEC2025 Hackathon solution](#https://github.com/olexamatej/bsec-2025)

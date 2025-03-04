@@ -23,13 +23,22 @@ export async function fetchRevenue() {
 
     // console.log('Data fetch completed after 3 seconds.');
 
-    return data;
+    return data; 
   } catch (error) {
     console.error('Database Error:', error);
     throw new Error('Failed to fetch revenue data.');
   }
 }
 
+
+const data = await sql<LatestInvoiceRaw[]>`
+  SELECT invoices.amount, customers.name, customers.image_url, customers.email
+  FROM invoices
+  JOIN customers ON invoices.customer_id = customers.id
+  ORDER BY invoices.date DESC
+  LIMIT 5`;
+
+  
 export async function fetchLatestInvoices() {
   try {
     const data = await sql<LatestInvoiceRaw[]>`
